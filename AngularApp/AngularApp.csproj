@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <TypeScriptToolsVersion>3.1</TypeScriptToolsVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="AngularApp\app\app.component.ts" />
+    <None Remove="AngularApp\app\app.module.ts" />
+    <None Remove="AngularApp\app\data.service.ts" />
+    <None Remove="AngularApp\app\not-found.component.ts" />
+    <None Remove="AngularApp\app\user-create.component.ts" />
+    <None Remove="AngularApp\app\user-detail.component.ts" />
+    <None Remove="AngularApp\app\user-edit.component.ts" />
+    <None Remove="AngularApp\app\user-form.component.ts" />
+    <None Remove="AngularApp\app\user-list.component.ts" />
+    <None Remove="AngularApp\app\user.ts" />
+    <None Remove="AngularApp\main.ts" />
+    <None Remove="AngularApp\polyfills.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.0" />
+    <PackageReference Include="pomelo.entityframeworkcore.mysql" Version="2.2.0" />
+    <PackageReference Include="swashbuckle.aspnetcore" Version="4.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="AngularApp\app\user\src\app.component.ts" />
+    <TypeScriptCompile Include="AngularApp\app\app.module.ts" />
+    <TypeScriptCompile Include="AngularApp\app\user\src\services\data.service.ts" />
+    <TypeScriptCompile Include="AngularApp\app\user\src\not-found.component.ts" />
+    <TypeScriptCompile Include="AngularApp\app\user\src\user-create.component.ts" />
+    <TypeScriptCompile Include="AngularApp\app\user\src\user-edit.component.ts" />
+    <TypeScriptCompile Include="AngularApp\app\user\src\user-form.component.ts" />
+    <TypeScriptCompile Include="AngularApp\app\user\src\user-detail.component.ts" />
+    <TypeScriptCompile Include="AngularApp\app\user\src\user-list.component.ts" />
+    <TypeScriptCompile Include="AngularApp\app\user\src\user.ts" />
+    <TypeScriptCompile Include="AngularApp\main.ts" />
+    <TypeScriptCompile Include="AngularApp\polyfills.ts" />
+  </ItemGroup>
+
+</Project>

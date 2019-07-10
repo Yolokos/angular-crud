@@ -1,0 +1,14 @@
+﻿<h2>List of Slaves</h2>
+<a routerLink="create" class="nav-link">Create Slave</a>
+<table class="table table-striped">
+    <tbody>
+        <tr *ngFor="let p of users">
+            <td>
+                <a [routerLink]="['user', p.id]" class="nav-link">{{p?.name}}</a>
+                <a [routerLink]="['edit', p.id]" class="nav-link">Edit</a>
+                <button (click)="delete(p.id)" class="btn btn-sm btn-danger">Delete</button>
+            </td>
+            
+        </tr>
+    </tbody>
+</table>
